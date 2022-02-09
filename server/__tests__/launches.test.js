@@ -1,12 +1,12 @@
 const request = require('supertest');
-const app = require('../../app');
+const app = require('../src/app');
 const { 
   mongoConnect,
   mongoDisconnect,
-} = require('../../services/mongo');
+} = require('../src/services/mongo');
 const {
   loadPlanetsData,
-} = require('../../models/planets.model');
+} = require('../src/models/planets.model');
 
 describe('Launches API', () => {
   beforeAll(async () => {
